@@ -14,17 +14,19 @@
   </div>
   <div class="modal" id="modalForm">
     <div class="modal-content">
-      <span class="close" id="close">&times;</span>
-      <h3>Cargar Nuevo Conocimiento</h3>
+      <div id="modal-content-encabezado">
+        <span class="close" id="close">&times;</span>
+        <h3>Nuevo Conocimiento</h3>
+      </div>
         <form action="/submit-form" method="POST" id="form-id">
           
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" maxlength="13" required><br><br>
+          
+          <input type="text" id="nombre" name="nombre" maxlength="13" placeholder="Nombre" required><br><br>
 
-          <label for="porcentaje">Porcentaje:</label>
-          <input type="number" id="porcentaje" name="porcentaje" required><br><br>
+          
+          <input type="number" id="porcentaje" name="porcentaje" placeholder="%" required><br><br>
 
-          <button type="submit" id="submit-form-btn">Enviar</button>
+          <button type="submit" id="submit-form-btn">Guardar</button>
         </form>
     </div>
   </div><br>
@@ -36,16 +38,19 @@
   </div>
 
   <div id="modal" class="modal">
-    
     <div class="modal-content">
+      <div id="modal-content-encabezado-modificar">
         <h3>Modificar Conocimiento</h3>
         <span class="close" id="closeModify">&times;</span> 
-        <label for="nombre">Nombre:</label>       
-        <input type="text" maxlength="13" id="modal-title">
-        <label for="porcentaje">Porcentaje:</label>
-        <input type="number" id="modal-porcentaje">
-        <button id="edit-btn">Modificar</button>
-        <button id="delete-btn">Eliminar</button>
+      </div>
+      <div>               
+          <input type="text" maxlength="13" id="modal-title" placeholder="Nombre"><br><br>        
+          <input type="number" id="modal-porcentaje" placeholder="%">
+          <div><br>
+            <button id="edit-btn">Modificar</button>
+            <button id="delete-btn">Eliminar</button>
+          </div>
+      </div>
     </div>
   </div>
 
