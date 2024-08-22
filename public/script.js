@@ -39,7 +39,7 @@ document.getElementById('submit-form-btn').addEventListener('click', function(ev
             })
             .then(text => {
                 alert('Conocimiento y porcentaje guardados correctamente');
-                document.getElementById('modalForm').style.display = 'none;'
+                document.getElementById('modalForm').style.display = 'none';
                 // Después de guardar, obtener y mostrar los datos actualizados
                 fetch('/mostrar-datos')
                     .then(response => response.json())
