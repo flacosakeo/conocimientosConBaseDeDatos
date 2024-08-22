@@ -1,0 +1,108 @@
+/* Estilos básicos para el modal */
+body{
+    background-color: beige;
+    margin: 2%;
+}
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.modal-content {
+    background-color: antiquewhite;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    /*width: 80%;*/
+    max-width: max-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px grey;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+#closeModify{
+    margin-top: -13%;
+    margin-right: -1%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#form-id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+#modal-title, #nombre{
+    width: 150px;
+}
+#modal-porcentaje, #porcentaje{
+    width: 50px;
+}
+
+#cargar, #mostrar-datos-btn,#submit-form-btn,#edit-btn,#delete-btn{
+    border-radius: 5px;    
+    border: none;
+    height: 25px;    
+}
+#submit-form-btn{    
+    background-color: blue;    
+    color: white;    
+}
+#cargar{
+   background-color: grey; 
+}
+#mostrar-datos-btn{
+    background-color: green;
+}
+#edit-btn{
+    background-color: gold;
+}
+#delete-btn{
+    background-color: red;
+}
+#cargar:hover{
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+#submit-form-btn:hover{
+    background-color: rgb(76, 76, 255);
+    cursor: pointer;
+}
+#mostrar-datos-btn:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+#edit-btn:hover{
+    background-color: goldenrod;
+    cursor: pointer;
+}
+#delete-btn:hover{
+    background-color: rgb(252, 93, 93);
+    cursor: pointer;
+}

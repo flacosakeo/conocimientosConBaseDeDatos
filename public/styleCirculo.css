@@ -1,0 +1,51 @@
+:root{
+    --color: '';
+    --forma: '';
+}
+option{
+    display: flex;    
+    align-items: center;    
+}
+.divContainerCirculo h2{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 75%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.divContainerCirculoExterno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0.5%;
+}
+.divContainerCirculo::before{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: var(--color);
+    border-radius: var(--forma);
+    display: flex;    
+}
+.divContainerCirculo{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+}
+#resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background: transparent;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
