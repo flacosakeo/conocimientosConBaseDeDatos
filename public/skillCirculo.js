@@ -60,7 +60,7 @@ function skillCirculo(dataArray){
         divContainerCirculoExterno.style.width = '100px';
         divContainerCirculoExterno.style.height = '100px';
         //divContainerCirculoExterno.style.borderRadius = '50%';
-        divContainerCirculoExterno.id = 'divContainerCirculoExterno'+item.conocimiento
+        divContainerCirculoExterno.id = 'divContainerCirculoExterno'+item.id;
         divContainerCirculoExterno.classList.add('divContainerCirculoExterno')
         
         document.getElementById('resultados').appendChild(divContainerCirculoExterno)
